@@ -2,16 +2,24 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock, Book, Users, Github, Linkedin, Instagram } from 'lucide-react';
 import CarouselGallery from '../components/ImageCarousel';
+import img1 from '../assets/images/Event1/img1.jpg';
+import img2 from '../assets/images/Event1/img2.jpg';
+import img3 from '../assets/images/Event1/img3.jpg';
+import img4 from '../assets/images/Event1/img4.jpg';
+import img5 from '../assets/images/Event1/img5.jpg';
+import img6 from '../assets/images/Event1/img6.jpg';
+import img7 from '../assets/images/Event1/img7.jpg';
+import img8 from '../assets/images/Event1/img8.jpg';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-  // Updated Upcoming Event Details
+  // Latest Event Details (completed)
   const upcomingEvent = {
     title: "Git It Right! – A Hands-On Git & GitHub Workshop",
-    date: "April 26th, 2025 (Tentative)",
-    description: "This workshop is designed to introduce students to Git and GitHub—fundamental tools for version control and collaborative development. Join us for hands-on experience!",
-    image: "https://images.unsplash.com/photo-1617042375876-a13e36732a04?q=80&w=800&auto=format&fit=crop" // Updated image URL
+    date: "April 26th, 2025",
+    description: "We successfully hosted a hands-on Git & GitHub workshop covering repos, commits, branching, pull requests, and real-world workflows.",
+    image: "https://images.unsplash.com/photo-1617042375876-a13e36732a04?q=80&w=800&auto=format&fit=crop"
   };
 
   const latestPosts = [
@@ -47,14 +55,7 @@ const Home: React.FC = () => {
     },
   ];
 
-  const galleryImages = [
-    'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800',
-    'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800',
-    'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800',
-    'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800',
-    'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800',
-    'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800'
-  ];
+  const galleryImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 
   return (
     <div className="relative overflow-hidden">
@@ -95,7 +96,7 @@ const Home: React.FC = () => {
 
         {/* Events Section */}
         <div className="section-divider">
-          <h2>Upcoming Events</h2>
+          <h2>Recent Event</h2>
         </div>
         <div className="flex justify-center mb-8">
           <div

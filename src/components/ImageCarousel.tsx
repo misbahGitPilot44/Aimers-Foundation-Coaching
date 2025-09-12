@@ -33,7 +33,7 @@ const CarouselGallery: React.FC<CarouselGalleryProps> = ({ images }) => {
               <img
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                className="w-full h-[500px] object-cover rounded-xl"
+                className="w-full h-56 sm:h-72 md:h-[500px] object-cover rounded-xl"
                 loading="lazy"
               />
             </div>
