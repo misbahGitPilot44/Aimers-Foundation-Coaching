@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 
   const contactInfo = [
     { icon: <Mail className="h-4 w-4" />, text: 'acmstudentchapter@sau.int' },
-    { icon: <Phone className="h-4 w-4" />, text: '+91 8920501053' },
+    { icon: <Phone className="h-4 w-4" />, text: '+91 8595251673' },
     { icon: <MapPin className="h-4 w-4" />, text: 'South Asian University, New Delhi' },
   ];
 
