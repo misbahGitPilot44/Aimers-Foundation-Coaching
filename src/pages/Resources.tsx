@@ -193,7 +193,7 @@ const ResourcesPage: React.FC = () => {
 
       <div className="text-center">
         <p className="text-lg">
-          Have a resource suggestion? <a href="/contact" className="text-[var(--accent)] hover:underline">Contact us</a> to let us know!
+          Have a resource suggestion? <a href="/Contact" className="text-[var(--accent)] hover:underline">Contact us</a> to let us know!
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Laptop, Megaphone, Users, Palette, Globe, Github, Linkedin, Instagram, BookOpen, BookText, PenTool } from 'lucide-react';
+import { Code, Laptop, Megaphone, Users, Palette, Globe, Github, Linkedin, BookOpen, BookText, PenTool } from 'lucide-react';
 
 import ReshmaMam from '../assets/images/Reshma_rastoogi.jpeg';
 import BhavanaGupta from '../assets/images/BhavanaGupta.png';
@@ -138,8 +138,8 @@ const teamMembers: TeamMember[] = [
     image: RajeshChowdhury,
     team: "tech",
     socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/rajesh' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://linkedin.com/in/rajesh' }
+      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/Rajeshchy082' },
+      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'http://www.linkedin.com/in/rajesh-chowdhury-50b6b220b' }
     ]
   },
   {
@@ -203,7 +203,7 @@ const teamMembers: TeamMember[] = [
     team: "socialMedia",
     socials: [
       { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/misbahGitPilot44?tab=repositories' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'http://www.linkedin.com/in/misbah-ul-islam-0501b2323' }
+      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/vaishali-jain-b745a4310' }
     ]
   },
   {
@@ -214,7 +214,7 @@ const teamMembers: TeamMember[] = [
     image: VaishaliJain,
     team: "socialMedia",
     socials: [
-      { icon: <Instagram className="h-5 w-5 text-black" />, url: 'https://instagram.com/vaishali' },
+      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/Vaishalijain20' },
       { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://linkedin.com/in/vaishali' }
     ]
   },
