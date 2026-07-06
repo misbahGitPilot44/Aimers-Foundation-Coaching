@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F9FAFB;
+  --text: #1F2937;
+  --accent: #1e6cff;
+  --accent-dark: #1550cc;
+  --secondary: #E5E7EB;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --background: #1F2937;
+  --text: #F9FAFB;
+  --accent: #1e6cff;
+  --accent-dark: #1550cc;
+  --secondary: #374151;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Page-specific accent colors */
+[data-page="events"] {
+  --accent: #FFB800;
+  --accent-dark: #CC9300;
+}
+
+[data-page="blog"] {
+  --accent: #FF4D4D;
+  --accent-dark: #CC3D3D;
+}
+
+[data-page="about"] {
+  --accent: #00C853;
+  --accent-dark: #00A041;
+}
+
+[data-page="membership"] {
+  --accent: #9C27B0;
+  --accent-dark: #7B1FA2;
+}
+
+[data-page="resources"] {
+  --accent: #FF6D00;
+  --accent-dark: #CC5700;
+}
+
+[data-page="contact"] {
+  --accent: #00BCD4;
+  --accent-dark: #0097A7;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--text)] transition-colors duration-200 relative min-h-screen antialiased;
+  }
+
+  /* Add pattern grid to body before element */
+  body::before {
+    content: '';
+    @apply fixed inset-0 z-[-1] pointer-events-none;
+    background-image: linear-gradient(var(--accent) 2px, transparent 2px),
+                     linear-gradient(90deg, var(--accent) 2px, transparent 2px);
+    background-size: 40px 40px;
+    background-position: -1px -1px;
+    opacity: 0.05;
+  }
+
+  /* Improve focus styles for better accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-[var(--accent)] rounded-sm;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative px-4 py-2 transition-colors rounded-lg hover:bg-[var(--secondary)] font-medium;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-[var(--accent)] transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--accent)] text-white px-6 py-3 rounded-xl 
+           hover:bg-[var(--accent-dark)] transform hover:-translate-y-0.5 
+           transition-all duration-200 font-medium
+           border-2 border-[var(--accent-dark)] shadow-[4px_4px_0px_0px_var(--accent-dark)]
+           focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[var(--accent)] mb-8;
+  }
+
+  .card {
+    @apply bg-[var(--secondary)] rounded-xl p-6 
+           border-2 border-[var(--accent)] 
+           shadow-[4px_4px_0px_0px_var(--accent)]
+           hover:shadow-[6px_6px_0px_0px_var(--accent)]
+           hover:translate-x-[-2px] hover:translate-y-[-2px]
+           transition-all duration-200;
+  }
+
+  .section-divider {
+    @apply relative flex items-center justify-center my-16;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    @apply flex-grow h-1 bg-[var(--accent)] opacity-20 rounded-full;
+  }
+
+  .section-divider::before {
+    @apply mr-8;
+  }
+
+  .section-divider::after {
+    @apply ml-8;
+  }
+
+  .section-divider h2 {
+    @apply text-2xl font-bold text-[var(--accent)];
+  }
+
+  .gallery {
+    @apply columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4;
+  }
+
+  .gallery-item {
+    @apply relative overflow-hidden rounded-xl break-inside-avoid;
+  }
+
+  .gallery-item img {
+    @apply w-full object-cover transition-transform duration-300 hover:scale-105;
+  }
+}
