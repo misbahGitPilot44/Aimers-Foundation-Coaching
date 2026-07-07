@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Calendar, Clock, Book, Users, Github, Linkedin, Instagram } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, Book, Users, Linkedin, Instagram } from 'lucide-react';
 import CarouselGallery from '../components/ImageCarousel';
 import img1 from '../assets/images/Event1/img1.jpg';
 import img2 from '../assets/images/Event1/img2.jpg';
