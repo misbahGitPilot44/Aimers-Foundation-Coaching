@@ -43,7 +43,6 @@ const Home: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github className="h-6 w-6" />, url: 'https://github.com/SAU-ACM-Student-Chapter', label: 'GitHub' },
     { icon: <Linkedin className="h-6 w-6" />, url: 'https://www.linkedin.com/company/sau-acm-student-chapter/', label: 'LinkedIn' },
     { icon: <Instagram className="h-6 w-6" />, url: 'https://www.instagram.com/sau_acmchapter/', label: 'Instagram' },
     {
