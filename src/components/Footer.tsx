@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, MapPin, Phone, Instagram } from 'lucide-react';
+import { Linkedin, Mail, MapPin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -13,12 +13,10 @@ const Footer: React.FC = () => {
 
   const contactInfo = [
     { icon: <Mail className="h-4 w-4" />, text: 'acmstudentchapter@sau.int' },
-    { icon: <Phone className="h-4 w-4" />, text: '+91 8595251673' },
     { icon: <MapPin className="h-4 w-4" />, text: 'South Asian University, New Delhi' },
   ];
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, url: 'https://github.com/SAU-ACM-Student-Chapter', label: 'GitHub' },
     { icon: <Linkedin className="h-5 w-5" />, url: 'https://in.linkedin.com/in/sau-acm-student-chapter-382812356', label: 'LinkedIn' },
     { icon: <Instagram className="h-5 w-5" />, url: 'https://www.instagram.com/sau_acmchapter/', label: 'Instagram' },
     { 
