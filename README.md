@@ -1,4 +1,4 @@
-# SAU ACM Student Chapter Website
+Aimers Foundatin Coaching
 
 This repository contains the source code for the official website of the SAU ACM Student Chapter, built using React and Vite.
 
