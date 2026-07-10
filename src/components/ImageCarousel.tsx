@@ -29,13 +29,15 @@ const CarouselGallery: React.FC<CarouselGalleryProps> = ({ images }) => {
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {images.map((src, index) => (
-            <div key={index} className="relative flex-[0_0_100%] min-w-0">
-              <img
-                src={src}
-                alt={`Gallery image ${index + 1}`}
-                className="w-full h-56 sm:h-72 md:h-[500px] object-cover rounded-xl"
-                loading="lazy"
-              />
+            <div key={index} className="relative flex-[0_0_100%] min-w-0 px-1 sm:px-2">
+              <div className="overflow-hidden rounded-xl bg-white shadow-md aspect-[16/9] sm:aspect-[21/9] md:aspect-[16/7]">
+                <img
+                  src={src}
+                  alt={`Gallery image ${index + 1}`}
+                  className="h-full w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
             </div>
           ))}
         </div>

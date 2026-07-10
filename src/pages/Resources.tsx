@@ -11,58 +11,58 @@ interface Resource {
 
 const resources: Resource[] = [
   {
-    title: "ACM Digital Library",
-    description: "Access millions of research articles, conference proceedings, and publications in computer science.",
-    link: "https://dl.acm.org/",
+    title: "",
+    description: "",
+    link: "",
     icon: <BookOpen className="w-6 h-6" />,
     category: 'research'
   },
   {
-    title: "ACM Queue",
-    description: "Practical guidance and insights on software development for professional developers.",
-    link: "https://queue.acm.org/",
+    title: "",
+    description: "",
+    link: "",
     icon: <FileText className="w-6 h-6" />,
     category: 'learning'
   },
   {
-    title: "ACM TechTalks",
-    description: "Video presentations and webinars on the latest trends in computing and technology.",
-    link: "https://learning.acm.org/techtalks",
+    title: "",
+    description: "",
+    link: "",
     icon: <Video className="w-6 h-6" />,
     category: 'learning'
   },
   {
-    title: "GitHub Student Developer Pack",
-    description: "Free access to developer tools and services for students through GitHub Education.",
-    link: "https://education.github.com/pack",
+    title: "",
+    description: "",
+    link: "",
     icon: <Code className="w-6 h-6" />,
     category: 'tools'
   },
   {
-    title: "ACM Learning Center",
-    description: "Online learning resources including courses, books, videos, and podcasts.",
-    link: "https://learning.acm.org/",
+    title: "",
+    description: "",
+    link: "",
     icon: <Book className="w-6 h-6" />,
     category: 'learning'
   },
   {
-    title: "IEEE Computer Society",
-    description: "Computing resources and professional development opportunities in partnership with IEEE.",
-    link: "https://www.computer.org/",
+    title: "",
+    description: "",
+    link: "",
     icon: <LinkIcon className="w-6 h-6" />,
     category: 'research'
   },
   {
-    title: "freeCodeCamp",
-    description: "Free interactive coding tutorials and certifications for web development, data science, and more.",
-    link: "https://www.freecodecamp.org/",
+    title: "",
+    description: "",
+    link: "",
     icon: <Code className="w-6 h-6" />,
     category: 'tutorials'
   },
   {
-    title: "ACM Computing Surveys",
-    description: "Comprehensive review articles that provide an overview of specialized areas in computing.",
-    link: "https://dl.acm.org/journal/csur",
+    title: "",
+    description: "",
+    link: "",
     icon: <PenTool className="w-6 h-6" />,
     category: 'research'
   }
@@ -83,7 +83,7 @@ const ResourcesPage: React.FC = () => {
         <h1 className="section-title">Resources</h1>
         <p className="text-lg max-w-3xl mx-auto mb-8">
           Explore our curated collection of learning resources, research materials, 
-          tutorials, and tools to support your journey in computing and technology.
+          tutorials, and tools.
         </p>
       </div>
 

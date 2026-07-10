@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/events', label: 'Events' },
+    { path: '/events', label: 'Course' },
     { path: '/membership', label: 'Membership' },
     { path: '/resources', label: 'Resources' },
     { path: '/contact', label: 'Contact' },
@@ -33,9 +33,9 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
           {/* Logo and brand */}
           <Link to="/" className="flex items-center group">
             <img 
-              src={import.meta.env.BASE_URL + "sau-acm-logo.png"} 
+              src={import.meta.env.BASE_URL + "logo.png"} 
               alt="SAU ACM Student Chapter" 
-              className="h-10 w-auto transform group-hover:scale-105 transition-transform duration-200"
+              className="h-20 w-auto transform group-hover:scale-105 transition-transform duration-200"
             />
           </Link>
 

@@ -1,23 +1,10 @@
 import React from 'react';
 import { Code, Laptop, Megaphone, Users, Palette, Globe, Github, Linkedin, BookOpen, BookText, PenTool } from 'lucide-react';
 
-import amyy from '../assets/images/amyy.jpeg';
+import sherinzafar from '../assets/images/sherinzafar.jpeg';
 import MisbahUlIslam from '../assets/images/MisbahUlIslam.jpeg';
-import MukundPrasad from '../assets/images/MukundPrasad.jpeg';
-import VipulGarg from '../assets/images/VipulGarg.webp';
-import KeshavBansal from '../assets/images/KeshavBansal.jpeg';
-import RajeshRanjan from '../assets/images/RajeshRanjan.jpeg';
-import AnanyaAdivi from '../assets/images/AnanyaAdivi.jpeg';
-import Basu from '../assets/images/Basu.jpeg';
-import kush from '../assets/images/kush.jpeg';
-import mad from '../assets/images/mad.jpeg';
-import hrishi from '../assets/images/hrishi.jpeg';
-import ansh from '../assets/images/ansh.jpeg';
-import rishit from '../assets/images/rishit.jpg';
-import vaib from '../assets/images/vaib.png';
-import swarno from '../assets/images/swarno.jpeg';
-import kartik from '../assets/images/kartik.jpeg';
-import mugh from '../assets/images/mugh.jpeg';
+import noorulislam from '../assets/images/noorulislam.jpeg';
+
 
 
 
@@ -48,267 +35,40 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   // Teacher Coordinator
   {
-    name: "Dr. Rajesh Ranjan",
-    role: "Faculty Coordinator",
-    subRole: "Advising and mentoring the team",
+    name: "Noorul Islam",
+    role: "Teacher",
+    subRole: "Aimers Foundation Coaching",
     icon: <BookText className="w-6 h-6 text-black" />,
-    image: RajeshRanjan,
+    image: noorulislam,
     team: "teacher",
     socials: [
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/dr-rajesh-ranjan-597b54346/' }
     ]
   },
   
   // Coordinators
   {
     name: "Misbah Ul Islam",
-    role: "Chair",
-    subRole: "Head",
+    role: "Student",
+    subRole: "South Asian University",
     icon: <Code className="w-6 h-6 text-black" />,
     image: MisbahUlIslam,
     team: "coordinators",
     socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/misbahGitPilot44' },
       { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/misbah-ul-islam-0501b2323/' }
     ]
   },
-  {
-    name: "Mukund Prasad",
-    role: "Vice Chair",
-    subRole: "Head",
-    icon: <Laptop className="w-6 h-6 text-black" />,
-    image: MukundPrasad,
-    team: "coordinators",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/mukundxplore' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/mukund-prasad/' }
-    ]
-  },
-  {
-    name: "Amritha S Nair",
-    role: "Secretary",
-    subRole: "Design & VFX Lead",
-    icon: <Megaphone className="w-6 h-6 text-black" />,
-    image: amyy,
-    team: "coordinators",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/assmrn' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/amritha-s-nair-b331aa376' }
-    ]
-  },
-  {
-    name: "Vipul Garg",
-    role: "Treasurer",
-    subRole: "Tech Lead",
-    icon: <Users className="w-6 h-6 text-black" />,
-    image: VipulGarg,
-    team: "coordinators",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/vasug723-bot' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/vipul-garg-4b1233391' }
-    ]
-  },
-  {
-    name: "Keshav Bansal",
-    role: "Web Master",
-    subRole: "Logistics Lead",
-    icon: <Palette className="w-6 h-6 text-black" />,
-    image: KeshavBansal,
-    team: "coordinators",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/keshavv1729' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/keshav-byte' }
-    ]
-  },
-  
-  // Tech & Management
-  {
-    name: "Keshav Bansal",
-    role: "Tech Lead",
-    subRole: "Web Master",
-    icon: <Laptop className="w-6 h-6 text-black" />,
-    image: KeshavBansal,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/keshavv1729' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/keshav-byte' }
-    ]
-  },
-  {
-    name: "Kartik Johari",
-    role: "Tech Member",
-    subRole: "",
-    icon: <Code className="w-6 h-6 text-black" />,
-    image: kartik,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: '' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: '' }
-    ]
-  },
-  {
-    name: "Mughda Jatin Sarmah",
-    role: "Tech Member",
-    subRole: "",
-    icon: <Code className="w-6 h-6 text-black" />,
-    image: mugh,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: '' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/mjsarmah/' }
-    ]
-  },
   
   {
-    name: "Vaibhav Vikash Keshari",
-    role: "Tech Member",
-    subRole: "",
-    icon: <Laptop className="w-6 h-6 text-black" />,
-    image: vaib,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/vaibhavkeshari2025' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/vaibhav-vikash-keshari-46b58941b/' }
-    ]
-  },
-  {
-    name: "Vipul Garg",
-    role: "Tech Member",
-    subRole: "",
-    icon: <Laptop className="w-6 h-6 text-black" />,
-    image: VipulGarg,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/vasug723-bot' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/vipul-garg-4b1233391' }
-    ]
-  },
-   {
-    name: "Rishit Gupta",
-    role: "Tech Member",
-    subRole: "",
-    icon: <Code className="w-6 h-6 text-black" />,
-    image: rishit,
-    team: "tech",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: '' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: '' }
-    ]
-  },
-
-  // PR team
-  {
-    name: "Anoushka Basu",
-    role: "PR Lead",
-    subRole: "Membership Chair",
-    icon: <Globe className="w-6 h-6 text-black" />,
-    image: Basu,
-    team: "pr",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/anoushka-basu' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/anoushkabasu/' }
-    ]
-  },
-  {
-    name: "Adivi Ananya",
-    role: "PR Member",
-    subRole: "",
-    icon: <Globe className="w-6 h-6 text-black" />,
-    image: AnanyaAdivi,
-    team: "pr",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/AnanyaAdivi' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'http://www.linkedin.com/in/ananya-adivi-9b6056345' }
-    ]
-  },
-
-  // Social Media and Content
-  {
-    name: "Amritha S Nair",
-    role: "Design & VFX Lead",
-    subRole: "Secretary",
+    name: "Dr. Sherin Zafar",
+    role: "Assistant Professor",
+    subRole: "Jamia Hamdard",
     icon: <Megaphone className="w-6 h-6 text-black" />,
-    image: amyy,
-    team: "design&vfx",
+    image: sherinzafar,
+    team: "coordinators",
     socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/assmrn' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/amritha-s-nair-b331aa376' }
+      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/dr-sherin-zafar-9a20a619/' }
     ]
   },
-  {
-    name: "Kushagra Upadhyay",
-    role: "Content Creator",
-    subRole: "",
-    icon: <PenTool className="w-6 h-6 text-black" />,
-    image: kush,
-    team: "design&vfx",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/ItoshiiNaKushagra' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/kushagra-upadhyay-94065738a/' }
-    ]
-  },
-  {
-    name: "Swarnojjwal Guha",
-    role: "Content Creator",
-    subRole: "",
-    icon: <PenTool className="w-6 h-6 text-black" />,
-    image: swarno,
-    team: "design&vfx",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/swarnojjwal' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/swarnojjwal-guha-12b902352/' }
-    ]
-  },
-
-  // R&D Team
-  {
-    name: "Adivi Ananya",
-    role: "R&D Lead",
-    subRole: "",
-    icon: <BookOpen className="w-6 h-6 text-black" />,
-    image: AnanyaAdivi,
-    team: "rnd",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/misbahGitPilot44' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/misbah-ul-islam-0501b2323' }
-    ]
-  },
-  {
-    name: "Madhur Krishna Saurabh",
-    role: "R&D Member",
-    subRole: "",
-    icon: <BookOpen className="w-6 h-6 text-black" />,
-    image: mad,
-    team: "rnd",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'github.com/madhurdotexe' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: '' }
-    ]
-  },
-  {
-    name: "Ansh.",
-    role: "R&D Member",
-    subRole: "",
-    icon: <BookOpen className="w-6 h-6 text-black" />,
-    image: ansh,
-    team: "rnd",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: '' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: '' }
-    ]
-  },
-  {
-    name: "Hrishi Kumar Agarwal",
-    role: "R&D Member",
-    subRole: "",
-    icon: <BookOpen className="w-6 h-6 text-black" />,
-    image: hrishi,
-    team: "rnd",
-    socials: [
-      { icon: <Github className="h-5 w-5 text-black" />, url: 'https://github.com/hrishiagarwal1-png' },
-      { icon: <Linkedin className="h-5 w-5 text-black" />, url: 'https://www.linkedin.com/in/hrishi-kumar-agarwal-359154373/' }
-    ]
-  }
   
 ];
 
@@ -321,28 +81,9 @@ const teamSections = [
   {
     title: "Coordinators",
     key: "coordinators" as const,
-    description: "Leading and guiding the chapter's vision and initiatives"
+    description: "Leading and guiding the coaching's vision and initiatives"
   },
-  {
-    title: "PR Team",
-    key: "pr" as const,
-    description: "Managing our community presence and outreach"
-  },
-  {
-    title: "Design & VFX",
-    key: "design&vfx" as const,
-    description: "Creating engaging content and managing our online presence"
-  },
-  {
-    title: "Research & Development",
-    key: "rnd" as const,
-    description: "Driving innovation and technical excellence"
-  },
-  {
-    title: "Tech & Logistics",
-    key: "tech" as const,
-    description: "Building and maintaining our technical infrastructure"
-  }
+  
 ];
 
 const About: React.FC = () => {
@@ -351,10 +92,8 @@ const About: React.FC = () => {
       <div className="text-center mb-16">
         <h1 className="section-title">About Us</h1>
         <p className="text-lg max-w-3xl mx-auto mb-8">
-          The South Asian University ACM Student Chapter is a dynamic community dedicated to advancing
-          computing innovation across South Asia. Join us to explore cutting-edge technology,
-          collaborate with passionate peers, and shape the future of computing in a space built for
-          creativity and discovery.
+        Aimers Foundation Coaching is a dedicated learning platform committed to empowering students through quality education and academic excellence. We support learners with expert guidance, structured preparation, interactive sessions, and personalized mentorship, helping them strengthen core concepts, build confidence, and achieve their academic and career aspirations.
+
         </p>
       </div>
       

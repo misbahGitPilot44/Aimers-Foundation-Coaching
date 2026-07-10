@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
     setStatus('idle');
 
     try {
-      const response = await fetch('https://formspree.io/f/mbdvwvyz', {
+      const response = await fetch('https://formspree.io/f/xqevvloz', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
 
         <div className="mt-8 text-center">
           <p className="text-lg mb-4">Or contact us directly:</p>
-          <p className="text-lg mb-8">Email: acmstudentchapter@sau.int</p>
+          <p className="text-lg mb-8">Email: aimersfoundationcoaching19@gmail.com</p>
 
           <div className="flex justify-center space-x-6 mb-8">
             <a

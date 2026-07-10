@@ -3,36 +3,36 @@ import { Check, ArrowRight } from 'lucide-react';
 
 const benefits = [
   {
-    title: "Digital Library Access",
-    description: "Full access to ACM Digital Library with millions of research papers and publications"
+    title: "Best Quality Education",
+    description: "Expert-led teaching focused on academic excellence and student success."
   },
   {
-    title: "Publications",
-    description: "Subscriptions to Communications of the ACM and XRDS magazines"
+    title: "Study Materials",
+    description: "Well-structured notes, practice sets, and exam-focused learning materials."
   },
   {
     title: "Learning Resources",
-    description: "Access to online courses, training videos, and educational materials"
+    description: "Access to useful educational content, practice tools, and guided resources."
   },
   {
-    title: "Networking",
-    description: "Connect with a vast network of peers and industry professionals"
+    title: "Supportive Environment",
+    description: "A positive learning space with continuous guidance and student support."
   },
   {
-    title: "Career Opportunities",
-    description: "Access to job boards, career resources, and professional development tools"
+    title: "Comprehensive Curriculum",
+    description: "A structured syllabus covering essential concepts and academic requirements."
   },
   {
-    title: "Event Discounts",
-    description: "Discounted registration for conferences and special events"
+    title: "Regular Assessments",
+    description: "Frequent tests and evaluations to track progress and identify improvement areas."
   },
   {
-    title: "Special Interest Groups",
-    description: "Join specialized communities focused on specific computing areas"
+    title: "Technology Integration",
+    description: "Modern digital tools and technology-enabled methods for effective learning."
   },
   {
-    title: "Distinguished Speakers",
-    description: "Access to the ACM Distinguished Speakers Program"
+    title: "Concept Building",
+    description: "Strong focus on fundamentals to develop clarity and long-term understanding."
   }
 ];
 
@@ -42,9 +42,7 @@ const Membership: React.FC = () => {
       <div className="text-center mb-16">
         <h1 className="section-title">Membership</h1>
         <p className="text-lg mb-8 max-w-3xl mx-auto">
-          Join the Association for Computing Machinery (ACM) and become part of a dynamic community
-          shaping the future of computing. Access valuable resources, expand your knowledge, and
-          advance your career.
+          Join Aimers Foundation Coaching and become part of a supportive learning community dedicated to academic success. Access expert guidance, strengthen your concepts, enhance your skills, and move confidently toward achieving your educational and career goals.
         </p>
         <a 
           href="https://docs.google.com/forms/d/e/1FAIpQLSfkesEgOp2PJ0hi42W1a9mU9JJkzsdze0yf9oB5SRD8bZ-gow/viewform"

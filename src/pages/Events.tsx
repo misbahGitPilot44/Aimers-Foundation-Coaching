@@ -4,9 +4,7 @@ import {
   Clock,
   MapPin,
   ArrowRight,
-  Users,
   Presentation,
-  Info,
   User,
   Target,
   Code,
@@ -14,15 +12,17 @@ import {
 } from "lucide-react";
 
 // Import your event images (add as many as you need)
-import img1 from "../assets/images/Event1/img1.jpg";
-import img2 from "../assets/images/Event1/img2.jpg";
-import img3 from "../assets/images/Event1/img3.jpg";
-import img4 from "../assets/images/Event1/img4.jpg";
-import img5 from "../assets/images/Event1/img5.jpg";
-import img6 from "../assets/images/Event1/img6.jpg";
+import img1 from "../assets/images/Event1/img1.jpeg";
+import img2 from "../assets/images/Event1/img2.jpeg";
+import img3 from "../assets/images/Event1/img3.jpeg";
+import img4 from "../assets/images/Event1/img4.jpeg";
+// import img5 from "../assets/images/Event1/img5.jpg";
+// import img6 from "../assets/images/Event1/img6.jpg";
+// import img7 from "../assets/images/Event1/img7.jpg";
+// import img8 from "../assets/images/Event1/img8.jpg";
 // keep adding more imports here...
 
-const images = [img1, img2, img3, img4, img5, img6]; // extend this list with all event images
+const images = [img1, img2, img3, img4,]; // extend this list with all event images
 
 /**
  * Interface defining the structure of event details
@@ -39,7 +39,7 @@ interface EventDetails {
   speaker?: string;
   duration?: string;
   targetAudience?: string;
-  level?: string;
+  class?: string;
   agenda?: {
     time: string;
     session: string;
@@ -49,70 +49,61 @@ interface EventDetails {
 }
 
 const event: EventDetails = {
-  id: "git-it-right-workshop",
-  title: "Git It Right! – A Hands-On Git & GitHub Workshop",
-  date: "April 26th, 2025",
-  status: "Completed",
-  time: "Held Successfully",
+  id: "fee-charges-relevant-details",
+  title: "Fees Charges & Relevant Details",
+  date: "Monday-Friday",
+  status: "All details updated",
+  time: "4:00 pm - 9:00 pm",
   location:
-    "Online (Zoom/Google Meet link was shared with registered participants)",
+    "108/19, Zakir Nagar, New Delhi, 110025",
   description:
-    "The SAU ACM Student Chapter organized a successful GitHub Workshop on April 26th, 2025. Students learned how to create repositories, manage commits, and collaborate using GitHub. The session was beginner-friendly and provided real-world workflows for academic and open-source projects.",
-  image:
-    "https://images.unsplash.com/photo-1617042375876-a13e36732a04?q=80&w=800&auto=format&fit=crop",
-  speaker: "Vinayak Sharma, SDE Intern, Samsung Research",
-  duration: "1.5 to 2 hours",
-  targetAudience:
-    "Undergraduate and postgraduate students (especially 1st and 2nd years) interested in version control, software development, and open-source contribution",
-  level: "Beginner-friendly",
+    "The Aimers Foundation Coaching website provides comprehensive details about course offerings, fee structures, and curriculum plans for students across different academic levels. Learners can explore structured programs, subject-wise fees, batch details, and available packages. The platform also offers clear payment-related information, ensuring a transparent and convenient enrollment experience.",
+  image: img1,
+  speaker: "",
+  duration: "",
+  targetAudience:"",
+  class: "IV-X",
   agenda: [
     {
-      time: "00:00 – 00:10",
+      time: "",
+      session: ""    },
+    {
+      time: "",
+      session: ""    },
+    {
+      time: "",
+      session: ""    },
+    {
+      time: "",
       session:
-        "Welcome & Introduction – Importance of version control and collaborative development",
+        ""
     },
     {
-      time: "00:10 – 00:30",
+      time: "",
       session:
-        "Understanding Git – Git fundamentals, installation, and essential commands (init, add, commit, log, etc.)",
+        "",
     },
     {
-      time: "00:30 – 00:55",
-      session:
-        "Getting Started with GitHub – Creating repositories, pushing code, working with branches",
-    },
-    {
-      time: "00:55 – 01:15",
-      session:
-        "Live Demo – Hands-on demonstration of setting up a project, collaborating via pull requests and forks",
-    },
-    {
-      time: "01:15 – 01:25",
-      session:
-        "Bonus Segment – Introduction to GitHub Pages and GitHub Projects for task management",
-    },
-    {
-      time: "01:25 – 01:45",
-      session:
-        "Q&A + Discussion – Addressing participant questions, next steps for practice and exploration",
-    },
+      time: "",
+      session: ""    },
   ],
   learningOutcomes: [
-    "Understood the purpose and workflow of Git and GitHub",
-    "Created and managed repositories",
-    "Collaborated with others through pull requests and forks",
-    "Applied version control in academic and personal projects",
+    "For one subject – Rs. 1000/- per month",
+    "For two subjects – Rs. 900/- per month per subject",
+    "For three subjects – Rs. 850/- per month per subject",
   ],
   additionalEngagement: [
-    "High participation with hands-on practice",
-    "Follow-up support through shared guides and cheat sheets",
-    "Encouragement for open-source contributions",
+    "For one subject – Rs. 1500/- per month",
+    "For two subjects – Rs. 1400/- per month per subject",
   ],
 };
 
 const Events: React.FC = () => {
   const [showDetails, setShowDetails] = useState(false);
   const detailsRef = useRef<HTMLDivElement>(null);
+  const feeStructureItems = (event.agenda ?? []).filter(
+    (item) => item.time.trim() !== "" || item.session.trim() !== ""
+  );
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -137,7 +128,7 @@ const Events: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="section-title text-center">Events</h1>
+      <h1 className="section-title text-center">Curriculum Structure</h1>
 
       {showDetails ? (
         // Event details view
@@ -151,11 +142,11 @@ const Events: React.FC = () => {
           </button>
 
           <div ref={detailsRef} className="card">
-            <div className="mb-6 rounded-xl overflow-hidden">
+            <div className="mb-6 rounded-xl overflow-hidden bg-white">
               <img
                 src={event.image}
                 alt={event.title}
-                className="w-full h-64 object-cover"
+                className="w-full h-auto max-h-[420px] object-contain"
               />
             </div>
 
@@ -165,13 +156,16 @@ const Events: React.FC = () => {
             </span>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <p className="flex items-center text-[var(--accent)]">
+              <p className="flex items-center text-black">
                 <Calendar className="w-5 h-5 mr-2 flex-shrink-0" />
                 <span>{event.date}</span>
               </p>
               <p className="flex items-center">
                 <Clock className="w-5 h-5 mr-2 flex-shrink-0" />
-                <span>{event.time} ({event.duration})</span>
+                <span>
+                  {event.time}
+                  {event.duration ? ` (${event.duration})` : ""}
+                </span>
               </p>
               <p className="flex items-center">
                 <MapPin className="w-5 h-5 mr-2 flex-shrink-0" />
@@ -183,10 +177,10 @@ const Events: React.FC = () => {
                   <span>Speaker: {event.speaker}</span>
                 </p>
               )}
-              {event.level && (
+              {event.class && (
                 <p className="flex items-center">
                   <Code className="w-5 h-5 mr-2 flex-shrink-0" />
-                  <span>Level: {event.level}</span>
+                  <span>Class: {event.class}</span>
                 </p>
               )}
               {event.targetAudience && (
@@ -200,13 +194,13 @@ const Events: React.FC = () => {
             <p className="mb-8">{event.description}</p>
 
             {/* Agenda Section */}
-            {event.agenda && event.agenda.length > 0 && (
+            {feeStructureItems.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Presentation className="w-5 h-5 mr-2" /> Topics Covered
+                  <Presentation className="w-5 h-5 mr-2" /> Fee Structure
                 </h3>
                 <div className="space-y-4">
-                  {event.agenda.map((item, index) => (
+                  {feeStructureItems.map((item, index) => (
                     <div
                       key={index}
                       className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow-sm"
@@ -229,7 +223,7 @@ const Events: React.FC = () => {
             {event.learningOutcomes && event.learningOutcomes.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Users className="w-5 h-5 mr-2" /> Key Takeaways
+                  VI-VIII
                 </h3>
                 <ul className="list-disc list-inside space-y-2 pl-4">
                   {event.learningOutcomes.map((item, index) => (
@@ -243,7 +237,7 @@ const Events: React.FC = () => {
             {event.additionalEngagement && event.additionalEngagement.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Info className="w-5 h-5 mr-2" /> Engagement
+                  IX-X
                 </h3>
                 <ul className="list-disc list-inside space-y-2 pl-4">
                   {event.additionalEngagement.map((item, index) => (
@@ -255,7 +249,7 @@ const Events: React.FC = () => {
 
             {/* Event Gallery */}
             <div id="gallery" className="mb-8">
-              <h3 className="text-xl font-semibold mb-4">📸 Event Highlights</h3>
+              <h3 className="text-xl font-semibold mb-4">📸 Coaching Gallery</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {images.map((src, index) => (
                   <img
@@ -271,9 +265,9 @@ const Events: React.FC = () => {
             {/* Recording Placeholder */}
             <div className="mt-10 p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md text-center">
             <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-              🎥 Event Recording</h2>
+              </h2>
             <p className="mb-4 text-gray-700 dark:text-gray-300">
-            Recording will be uploaded soon. Stay tuned!
+          
             </p>
             </div>
           </div>
@@ -301,7 +295,7 @@ const Events: React.FC = () => {
                 <CheckCircle className="w-4 h-4 mr-2" /> {event.status}
               </span>
               <div className="space-y-2 text-sm">
-                <p className="flex items-center text-[var(--accent)]">
+                <p className="flex items-center text-black">
                   <Calendar className="w-4 h-4 mr-2" />
                   {event.date}
                 </p>
@@ -316,7 +310,7 @@ const Events: React.FC = () => {
               </div>
               <p className="mt-4 line-clamp-2">{event.description}</p>
               <div className="mt-6 md:mt-auto pt-2">
-                <button className="btn-primary whitespace-nowrap">View Highlights</button>
+                <button className="btn-primary whitespace-nowrap">View Details</button>
               </div>
             </div>
           </div>

@@ -16,76 +16,63 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    id: "ai-trends-2025",
-    title: "AI Trends Shaping 2025",
-    excerpt: "Exploring the latest developments in artificial intelligence and machine learning that are transforming industries.",
-    content: `Artificial Intelligence continues to evolve at an unprecedented pace, reshaping how we live and work. In 2025, we're seeing several key trends emerge that are worth watching closely.
+    id: "",
+    title: "",
+    excerpt: "",
+    content: `
 
-First, there's the rise of multimodal AI systems that can process and generate different types of data - text, images, audio, and video - simultaneously. These systems are becoming increasingly sophisticated, offering new possibilities for creative work and data analysis.
 
-Another significant trend is the democratization of AI tools. What once required deep expertise and substantial computing resources is now accessible to developers and businesses of all sizes. This accessibility is driving innovation across sectors, from healthcare to education.
 
-Edge AI is also gaining momentum, with more processing happening on local devices rather than in the cloud. This shift improves response times and addresses privacy concerns, making AI more practical for real-time applications.
 
-[Continue reading on Medium...]`,
-    author: "Dr. Sarah Chen",
-    date: "March 15, 2025",
-    readTime: "5 min read",
+`,
+    author: "",
+    date: "",
+    readTime: "",
     tags: ["AI", "Technology", "Future"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800"
+    image: ""
   },
   {
-    id: "hackathon-success",
-    title: "Master Your Next Hackathon",
-    excerpt: "Essential strategies and tips for success in your next coding competition, based on experiences from top performers.",
-    content: `Hackathons are intense, exciting events that can accelerate your learning and open new opportunities. Here's how to make the most of your next hackathon experience.
+    id: "",
+    title: "",
+    excerpt: "",
+    content: `
 
-Preparation is key. Before the event, familiarize yourself with common development tools and frameworks. Having a solid foundation will help you focus on building rather than troubleshooting basic issues.
-
-Team composition matters. Look for teammates with complementary skills - if you're a backend developer, try to partner with someone strong in frontend development or design. This balance can help you create more complete solutions.
-
-Time management is crucial. Start with a minimum viable product (MVP) and add features only if time permits. It's better to have a working basic solution than an incomplete complex one.
-
-[Continue reading on Medium...]`,
-    author: "Alex Kumar",
-    date: "March 10, 2025",
-    readTime: "4 min read",
+`,
+    author: "",
+    date: "",
+    readTime: "",
     tags: ["Hackathon", "Programming", "Tips"],
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800"
+    image: ""
   },
   {
-    id: "cloud-computing",
-    title: "The Future of Cloud Computing",
-    excerpt: "How cloud technologies are driving innovation and scalability in modern applications.",
-    content: `Cloud computing has become the backbone of modern technology infrastructure. In this article, we explore how advancements in cloud services are enabling businesses to scale rapidly and innovate efficiently.
+    id: "",
+    title: "",
+    excerpt: "",
+    content: `
 
-Key trends include serverless computing, which abstracts infrastructure management, and hybrid cloud solutions that combine on-premises and cloud environments for flexibility. Additionally, AI-driven cloud analytics are empowering organizations to derive actionable insights from massive datasets.
 
-As cloud adoption grows, security remains a priority, with new protocols ensuring data integrity and privacy across distributed systems.
 
-[Continue reading on Medium...]`,
-    author: "Priya Sharma",
-    date: "March 5, 2025",
-    readTime: "6 min read",
+`,
+    author: "",
+    date: "",
+    readTime: "",
     tags: ["Cloud", "Technology", "Innovation"],
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800"
+    image: ""
   },
   {
-    id: "open-source",
-    title: "Why Open Source Matters",
-    excerpt: "A deep dive into the impact of open-source software on collaboration and innovation.",
-    content: `Open-source software has transformed the way developers collaborate and build technology. This article explores the principles behind open source, its benefits, and its challenges.
+    id: "",
+    title: "",
+    excerpt: "",
+    content: `
 
-Open source fosters community-driven development, enabling contributors worldwide to improve software collectively. It also democratizes access to cutting-edge tools, leveling the playing field for startups and individuals.
 
-However, maintaining open-source projects requires sustainable funding and governance models to ensure long-term success.
 
-[Continue reading on Medium...]`,
-    author: "Rahul Verma",
-    date: "February 28, 2025",
-    readTime: "5 min read",
+`,
+    author: "",
+    date: "",
+    readTime:"",
     tags: ["Open Source", "Programming", "Community"],
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800"
+    image: ""
   }
 ];
 
