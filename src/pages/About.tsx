@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Laptop, Megaphone, Users, Palette, Globe, Github, Linkedin, BookOpen, BookText, PenTool } from 'lucide-react';
+import { Code, Megaphone, Linkedin, BookText, } from 'lucide-react';
 
 import sherinzafar from '../assets/images/sherinzafar.jpeg';
 import MisbahUlIslam from '../assets/images/MisbahUlIslam.jpeg';
