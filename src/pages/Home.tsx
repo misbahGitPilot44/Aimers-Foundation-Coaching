@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     title: "Fees Charges & Relevant Details",
     date: "",
     description: "",
-    image: "src/assets/images/Event1/img1.jpeg"
+    image: img1
   };
 
   const latestPosts = [
