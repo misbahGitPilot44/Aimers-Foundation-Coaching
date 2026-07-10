@@ -94,6 +94,9 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t-2 border-[#374151] text-center text-sm text-gray-300">
           <p>© 2026 Aimers Foundation Coaching. All rights reserved.</p>
+          <br></br>
+          <strong>Designed by Misbah Ul Islam</strong>
+
         </div>
       </div>
     </footer>
