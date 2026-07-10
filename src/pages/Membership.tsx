@@ -45,7 +45,7 @@ const Membership: React.FC = () => {
           Join Aimers Foundation Coaching and become part of a supportive learning community dedicated to academic success. Access expert guidance, strengthen your concepts, enhance your skills, and move confidently toward achieving your educational and career goals.
         </p>
         <a 
-          href=""
+          href="https://forms.gle/T2i1jV6KTuSG9nSp7"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary inline-flex items-center group"

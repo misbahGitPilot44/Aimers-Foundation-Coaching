@@ -23,12 +23,13 @@ const Home: React.FC = () => {
 
   const latestPosts = [
     {
-      title: "",
+      title: "Coming Soon",
+      image:"https://static.vecteezy.com/system/resources/thumbnails/006/209/507/small/of-coming-soon-perfect-for-additional-design-coming-soon-design-etc-vector.jpg"
     },
     {
-      title: "",
+      title: "Coming Soon",
       excerpt: "",
-      image: ""
+      image: "https://static.vecteezy.com/system/resources/thumbnails/006/209/507/small/of-coming-soon-perfect-for-additional-design-coming-soon-design-etc-vector.jpg"
     }
   ];
 

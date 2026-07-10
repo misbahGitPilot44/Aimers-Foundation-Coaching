@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
           <div className="flex items-center gap-2">
             {/* Become Member button - visible on both desktop and mobile */}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfkesEgOp2PJ0hi42W1a9mU9JJkzsdze0yf9oB5SRD8bZ-gow/viewform"
+              href="https://forms.gle/T2i1jV6KTuSG9nSp7"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 xl:px-5 xl:py-2.5 rounded-xl font-medium text-[var(--accent)] border-2 border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all duration-300 ease-in-out text-sm sm:text-base"
