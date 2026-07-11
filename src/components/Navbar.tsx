@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/events', label: 'Course' },
-    { path: '/membership', label: 'Membership' },
+    { path: '/membership', label: 'Classes' },
     { path: '/resources', label: 'Resources' },
     { path: '/contact', label: 'Contact' },
     { path: '/blog', label: 'Blog' },
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
               className="flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 xl:px-5 xl:py-2.5 rounded-xl font-medium text-[var(--accent)] border-2 border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all duration-300 ease-in-out text-sm sm:text-base"
             >
               <UserPlus className="h-3.5 w-3.5 sm:h-4 sm:w-4 xl:h-5 xl:w-5" />
-              <span className="hidden sm:inline">become member</span>
+              <span className="hidden sm:inline">Join class</span>
               <span className="sm:hidden">Join</span>
             </a>
             

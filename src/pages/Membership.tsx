@@ -40,7 +40,7 @@ const Membership: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h1 className="section-title">Membership</h1>
+        <h1 className="section-title">Classes</h1>
         <p className="text-lg mb-8 max-w-3xl mx-auto">
           Join Aimers Foundation Coaching and become part of a supportive learning community dedicated to academic success. Access expert guidance, strengthen your concepts, enhance your skills, and move confidently toward achieving your educational and career goals.
         </p>
