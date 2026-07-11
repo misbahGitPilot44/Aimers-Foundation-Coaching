@@ -69,7 +69,7 @@ const Home: React.FC = () => {
             to="/membership"
             className="btn-primary inline-flex items-center group mb-8"
           >
-            Become a Member
+            Join Class
             <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
           </Link>
 
